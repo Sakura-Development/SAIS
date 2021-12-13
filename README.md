@@ -1,4 +1,4 @@
-## SAIS
+# SAIS
 Stable branch of SAIS (Shinto Automatic Install Script) for Artix Linux.
 
 ## Contributing
