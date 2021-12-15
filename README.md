@@ -1,13 +1,7 @@
-# SAIS
-Stable branch of SAIS (Shinto Automatic Install Script) for Artix Linux.
+# Shinto Auto-Install Script (SAIS)
 
-## Contributing
-Make a fork and get to work!
+## Installation:
 
-## Test Branch
-Found at https://github.com/PandaCatPlayz/Shinto/tree/master/SAIS
-
-## Installing
 On a *fresh installation* of Artix, run the following:
 
 ```
@@ -17,7 +11,7 @@ pacman -Syu
 
 pacman -Sy git curl base-devel
 
-git clone https://github.com/Sakura-Development/SAIS
+git clone https://github.com/PandaCatPlayz/Shinto/tree/master/SAIS
 
 cd SAIS
 
@@ -27,6 +21,7 @@ sh sais.sh
 That's it.
 
 ## What is SAIS?
+
 SAIS is a script that autoinstalls and autoconfigures a fully-functioning
 and minimal terminal-and-vim-based Artix Linux environment.
 

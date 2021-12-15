@@ -17,7 +17,7 @@ esac done
 
 # Repositories and AUR
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/lukesmithxyz/voidrice.git"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/PandaCatPlayz/Shinto/master/SAIS/progs.csv"
+[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/PandaCatPlayz/Shinto/tree/master/SAIS/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
 
