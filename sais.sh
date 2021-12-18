@@ -128,11 +128,17 @@ aurinstall() { \
 	sudo -u "$name" $aurhelper -S --noconfirm "$1" >/dev/null 2>&1
 	}
 
-# Installs PIP for Python
+# Installs via PIP
 pipinstall() { \
 	dialog --title "SAIS Installation" --infobox "Installing the Python package \`$1\` ($n of $total). $1 $2" 5 70
 	[ -x "$(command -v "pip")" ] || installpkg python-pip >/dev/null 2>&1
 	yes | pip install "$1"
+	}
+
+# Installs via Paru
+paruinstall() { \
+	dialog --title "SAIS Installation" --infobox "Installing \`$1\` ($n of $total) from Paru. $1 $2" 5 70
+	sudo "$name" paru -S --noconfirm "$1" >/dev/null 2>$1
 	}
 
 # Chooses which installer to use from git, AUR, PIP, or main
